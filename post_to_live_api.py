@@ -6,7 +6,7 @@ response. Run this after the app is deployed on Render.
 import requests
 
 # Change this to the actual Render URL once the app is deployed.
-API_URL = "https://census-income-api.onrender.com/predict"
+API_URL = "https://census-income-api-trxw.onrender.com/predict"
 
 record = {
     "age": 45,

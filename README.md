@@ -5,7 +5,7 @@ predict whether a person's annual income exceeds $50,000, and serves predictions
 FastAPI REST API. It covers the full pipeline: data processing, model training, unit
 testing, slice-based performance evaluation, and API deployment.
 
-**GitHub repository:** <add this repo's GitHub URL here before submitting>
+**GitHub repository:** https://github.com/zoeyz-dev/census-income-api
 
 ## Setup
 
