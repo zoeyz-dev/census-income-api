@@ -1,0 +1,16 @@
+[flake8]
+max-line-length = 127
+max-complexity = 10
+exclude =
+    .venv,
+    venv,
+    __pycache__,
+    .git,
+    .pytest_cache,
+    model,
+    data,
+    build,
+    dist,
+    *.egg-info
+extend-exclude =
+    sanitycheck.py

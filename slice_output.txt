@@ -1,0 +1,424 @@
+Model performance on slices of the test set
+============================================================
+Note: precision/recall/fbeta are computed with zero_division=1. A slice with n_pos=0 (no actual >50K cases) or n_pred_pos=0 (no predicted >50K cases) reports 1.0000 on the corresponding metric by convention, not by measurement.
+
+Feature: workclass
+------------------------------------------------------------
+  Value: ? (n=389, n_pos=42, n_pred_pos=23)
+    precision: 0.7391
+    recall:    0.4048
+    fbeta:     0.5231
+  Value: Federal-gov (n=191, n_pos=70, n_pred_pos=65)
+    precision: 0.7538
+    recall:    0.7000
+    fbeta:     0.7259
+  Value: Local-gov (n=387, n_pos=110, n_pred_pos=90)
+    precision: 0.7667
+    recall:    0.6273
+    fbeta:     0.6900
+  Value: Private (n=4578, n_pos=1001, n_pred_pos=686)
+    precision: 0.8120
+    recall:    0.5564
+    fbeta:     0.6603
+  Value: Self-emp-inc (n=212, n_pos=118, n_pred_pos=114)
+    precision: 0.8158
+    recall:    0.7881
+    fbeta:     0.8017
+  Value: Self-emp-not-inc (n=498, n_pos=157, n_pred_pos=102)
+    precision: 0.7451
+    recall:    0.4841
+    fbeta:     0.5869
+  Value: State-gov (n=254, n_pos=73, n_pred_pos=68)
+    precision: 0.7500
+    recall:    0.6986
+    fbeta:     0.7234
+  Value: Without-pay (n=4, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+
+Feature: education
+------------------------------------------------------------
+  Value: 10th (n=183, n_pos=12, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.0833
+    fbeta:     0.1538
+  Value: 11th (n=225, n_pos=11, n_pred_pos=3)
+    precision: 1.0000
+    recall:    0.2727
+    fbeta:     0.4286
+  Value: 12th (n=98, n_pos=5, n_pred_pos=2)
+    precision: 1.0000
+    recall:    0.4000
+    fbeta:     0.5714
+  Value: 1st-4th (n=23, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: 5th-6th (n=62, n_pos=4, n_pred_pos=2)
+    precision: 1.0000
+    recall:    0.5000
+    fbeta:     0.6667
+  Value: 7th-8th (n=141, n_pos=6, n_pred_pos=0)
+    precision: 1.0000
+    recall:    0.0000
+    fbeta:     0.0000
+  Value: 9th (n=115, n_pos=3, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.3333
+    fbeta:     0.5000
+  Value: Assoc-acdm (n=198, n_pos=47, n_pred_pos=30)
+    precision: 0.7333
+    recall:    0.4681
+    fbeta:     0.5714
+  Value: Assoc-voc (n=273, n_pos=63, n_pred_pos=35)
+    precision: 0.7143
+    recall:    0.3968
+    fbeta:     0.5102
+  Value: Bachelors (n=1053, n_pos=450, n_pred_pos=483)
+    precision: 0.7495
+    recall:    0.8044
+    fbeta:     0.7760
+  Value: Doctorate (n=77, n_pos=57, n_pred_pos=62)
+    precision: 0.8548
+    recall:    0.9298
+    fbeta:     0.8908
+  Value: HS-grad (n=2085, n_pos=345, n_pred_pos=92)
+    precision: 0.9348
+    recall:    0.2493
+    fbeta:     0.3936
+  Value: Masters (n=369, n_pos=207, n_pred_pos=216)
+    precision: 0.8287
+    recall:    0.8647
+    fbeta:     0.8463
+  Value: Preschool (n=10, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Prof-school (n=116, n_pos=84, n_pred_pos=95)
+    precision: 0.8105
+    recall:    0.9167
+    fbeta:     0.8603
+  Value: Some-college (n=1485, n_pos=277, n_pred_pos=126)
+    precision: 0.7857
+    recall:    0.3574
+    fbeta:     0.4913
+
+Feature: marital-status
+------------------------------------------------------------
+  Value: Divorced (n=920, n_pos=103, n_pred_pos=37)
+    precision: 0.9189
+    recall:    0.3301
+    fbeta:     0.4857
+  Value: Married-AF-spouse (n=4, n_pos=3, n_pred_pos=0)
+    precision: 1.0000
+    recall:    0.0000
+    fbeta:     0.0000
+  Value: Married-civ-spouse (n=2950, n_pos=1316, n_pred_pos=1060)
+    precision: 0.7821
+    recall:    0.6299
+    fbeta:     0.6978
+  Value: Married-spouse-absent (n=96, n_pos=8, n_pred_pos=2)
+    precision: 1.0000
+    recall:    0.2500
+    fbeta:     0.4000
+  Value: Never-married (n=2126, n_pos=103, n_pred_pos=38)
+    precision: 0.9474
+    recall:    0.3495
+    fbeta:     0.5106
+  Value: Separated (n=209, n_pos=19, n_pred_pos=8)
+    precision: 1.0000
+    recall:    0.4211
+    fbeta:     0.5926
+  Value: Widowed (n=208, n_pos=19, n_pred_pos=3)
+    precision: 1.0000
+    recall:    0.1579
+    fbeta:     0.2727
+
+Feature: occupation
+------------------------------------------------------------
+  Value: ? (n=389, n_pos=42, n_pred_pos=23)
+    precision: 0.7391
+    recall:    0.4048
+    fbeta:     0.5231
+  Value: Adm-clerical (n=726, n_pos=96, n_pred_pos=57)
+    precision: 0.6842
+    recall:    0.4062
+    fbeta:     0.5098
+  Value: Armed-Forces (n=3, n_pos=1, n_pred_pos=1)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Craft-repair (n=821, n_pos=181, n_pred_pos=73)
+    precision: 0.8493
+    recall:    0.3425
+    fbeta:     0.4882
+  Value: Exec-managerial (n=838, n_pos=397, n_pred_pos=343)
+    precision: 0.8367
+    recall:    0.7229
+    fbeta:     0.7757
+  Value: Farming-fishing (n=193, n_pos=28, n_pred_pos=12)
+    precision: 0.6667
+    recall:    0.2857
+    fbeta:     0.4000
+  Value: Handlers-cleaners (n=273, n_pos=12, n_pred_pos=8)
+    precision: 0.5000
+    recall:    0.3333
+    fbeta:     0.4000
+  Value: Machine-op-inspct (n=378, n_pos=47, n_pred_pos=17)
+    precision: 0.7647
+    recall:    0.2766
+    fbeta:     0.4062
+  Value: Other-service (n=667, n_pos=26, n_pred_pos=6)
+    precision: 0.8333
+    recall:    0.1923
+    fbeta:     0.3125
+  Value: Priv-house-serv (n=26, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Prof-specialty (n=828, n_pos=392, n_pred_pos=388)
+    precision: 0.7912
+    recall:    0.7832
+    fbeta:     0.7872
+  Value: Protective-serv (n=136, n_pos=42, n_pred_pos=17)
+    precision: 0.6471
+    recall:    0.2619
+    fbeta:     0.3729
+  Value: Sales (n=729, n_pos=192, n_pred_pos=151)
+    precision: 0.7748
+    recall:    0.6094
+    fbeta:     0.6822
+  Value: Tech-support (n=189, n_pos=51, n_pred_pos=31)
+    precision: 0.7419
+    recall:    0.4510
+    fbeta:     0.5610
+  Value: Transport-moving (n=317, n_pos=64, n_pred_pos=21)
+    precision: 0.8571
+    recall:    0.2812
+    fbeta:     0.4235
+
+Feature: relationship
+------------------------------------------------------------
+  Value: Husband (n=2590, n_pos=1170, n_pred_pos=944)
+    precision: 0.7881
+    recall:    0.6359
+    fbeta:     0.7039
+  Value: Not-in-family (n=1702, n_pos=188, n_pred_pos=69)
+    precision: 0.9420
+    recall:    0.3457
+    fbeta:     0.5058
+  Value: Other-relative (n=178, n_pos=8, n_pred_pos=3)
+    precision: 1.0000
+    recall:    0.3750
+    fbeta:     0.5455
+  Value: Own-child (n=1019, n_pos=17, n_pred_pos=3)
+    precision: 1.0000
+    recall:    0.1765
+    fbeta:     0.3000
+  Value: Unmarried (n=702, n_pos=45, n_pred_pos=14)
+    precision: 0.9286
+    recall:    0.2889
+    fbeta:     0.4407
+  Value: Wife (n=322, n_pos=143, n_pred_pos=115)
+    precision: 0.7304
+    recall:    0.5874
+    fbeta:     0.6512
+
+Feature: race
+------------------------------------------------------------
+  Value: Amer-Indian-Eskimo (n=71, n_pos=10, n_pred_pos=6)
+    precision: 0.8333
+    recall:    0.5000
+    fbeta:     0.6250
+  Value: Asian-Pac-Islander (n=193, n_pos=62, n_pred_pos=57)
+    precision: 0.7895
+    recall:    0.7258
+    fbeta:     0.7563
+  Value: Black (n=599, n_pos=65, n_pred_pos=46)
+    precision: 0.7609
+    recall:    0.5385
+    fbeta:     0.6306
+  Value: Other (n=55, n_pos=6, n_pred_pos=5)
+    precision: 0.8000
+    recall:    0.6667
+    fbeta:     0.7273
+  Value: White (n=5595, n_pos=1428, n_pred_pos=1034)
+    precision: 0.7959
+    recall:    0.5763
+    fbeta:     0.6686
+
+Feature: sex
+------------------------------------------------------------
+  Value: Female (n=2126, n_pos=233, n_pred_pos=135)
+    precision: 0.7704
+    recall:    0.4464
+    fbeta:     0.5652
+  Value: Male (n=4387, n_pos=1338, n_pred_pos=1013)
+    precision: 0.7976
+    recall:    0.6039
+    fbeta:     0.6874
+
+Feature: native-country
+------------------------------------------------------------
+  Value: ? (n=125, n_pos=31, n_pred_pos=29)
+    precision: 0.7241
+    recall:    0.6774
+    fbeta:     0.7000
+  Value: Cambodia (n=3, n_pos=1, n_pred_pos=0)
+    precision: 1.0000
+    recall:    0.0000
+    fbeta:     0.0000
+  Value: Canada (n=22, n_pos=8, n_pred_pos=9)
+    precision: 0.5556
+    recall:    0.6250
+    fbeta:     0.5882
+  Value: China (n=18, n_pos=8, n_pred_pos=8)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Columbia (n=6, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Cuba (n=19, n_pos=5, n_pred_pos=4)
+    precision: 1.0000
+    recall:    0.8000
+    fbeta:     0.8889
+  Value: Dominican-Republic (n=8, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Ecuador (n=5, n_pos=2, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.5000
+    fbeta:     0.6667
+  Value: El-Salvador (n=20, n_pos=1, n_pred_pos=1)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: England (n=14, n_pos=4, n_pred_pos=3)
+    precision: 0.6667
+    recall:    0.5000
+    fbeta:     0.5714
+  Value: France (n=5, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Germany (n=32, n_pos=13, n_pred_pos=12)
+    precision: 0.7500
+    recall:    0.6923
+    fbeta:     0.7200
+  Value: Greece (n=7, n_pos=2, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.5000
+    fbeta:     0.6667
+  Value: Guatemala (n=13, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Haiti (n=6, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Honduras (n=4, n_pos=1, n_pred_pos=1)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Hong (n=8, n_pos=1, n_pred_pos=2)
+    precision: 0.5000
+    recall:    1.0000
+    fbeta:     0.6667
+  Value: Hungary (n=3, n_pos=2, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.5000
+    fbeta:     0.6667
+  Value: India (n=21, n_pos=8, n_pred_pos=9)
+    precision: 0.7778
+    recall:    0.8750
+    fbeta:     0.8235
+  Value: Iran (n=12, n_pos=5, n_pred_pos=4)
+    precision: 0.5000
+    recall:    0.4000
+    fbeta:     0.4444
+  Value: Ireland (n=5, n_pos=1, n_pred_pos=1)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Italy (n=14, n_pos=4, n_pred_pos=4)
+    precision: 0.7500
+    recall:    0.7500
+    fbeta:     0.7500
+  Value: Jamaica (n=13, n_pos=0, n_pred_pos=1)
+    precision: 0.0000
+    recall:    1.0000
+    fbeta:     0.0000
+  Value: Japan (n=11, n_pos=4, n_pred_pos=4)
+    precision: 0.7500
+    recall:    0.7500
+    fbeta:     0.7500
+  Value: Laos (n=4, n_pos=1, n_pred_pos=0)
+    precision: 1.0000
+    recall:    0.0000
+    fbeta:     0.0000
+  Value: Mexico (n=114, n_pos=3, n_pred_pos=1)
+    precision: 1.0000
+    recall:    0.3333
+    fbeta:     0.5000
+  Value: Nicaragua (n=7, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Peru (n=5, n_pos=1, n_pred_pos=0)
+    precision: 1.0000
+    recall:    0.0000
+    fbeta:     0.0000
+  Value: Philippines (n=35, n_pos=16, n_pred_pos=11)
+    precision: 1.0000
+    recall:    0.6875
+    fbeta:     0.8148
+  Value: Poland (n=14, n_pos=2, n_pred_pos=3)
+    precision: 0.3333
+    recall:    0.5000
+    fbeta:     0.4000
+  Value: Portugal (n=6, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Puerto-Rico (n=22, n_pos=6, n_pred_pos=6)
+    precision: 0.8333
+    recall:    0.8333
+    fbeta:     0.8333
+  Value: Scotland (n=3, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: South (n=13, n_pos=2, n_pred_pos=3)
+    precision: 0.3333
+    recall:    0.5000
+    fbeta:     0.4000
+  Value: Taiwan (n=11, n_pos=4, n_pred_pos=5)
+    precision: 0.8000
+    recall:    1.0000
+    fbeta:     0.8889
+  Value: Thailand (n=5, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Trinadad&Tobago (n=3, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: United-States (n=5870, n_pos=1435, n_pred_pos=1024)
+    precision: 0.7988
+    recall:    0.5700
+    fbeta:     0.6653
+  Value: Vietnam (n=5, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+  Value: Yugoslavia (n=2, n_pos=0, n_pred_pos=0)
+    precision: 1.0000
+    recall:    1.0000
+    fbeta:     1.0000
+

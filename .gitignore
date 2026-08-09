@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+*.egg-info/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets, never commit
+*.key
+*.pem
+secrets.json
+.aws/
+
+# Type-checker / coverage caches
+.mypy_cache/
+.coverage
+htmlcov/
